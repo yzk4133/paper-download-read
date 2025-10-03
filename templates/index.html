@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>arXiv PDF 下载工具</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+            /* 新增：定义基础尺寸变量，便于统一调整 */
+            --base-padding: 2rem;
+            --form-width: 70%; /* PC端表单宽度占屏幕80% */
+            --max-container-width: 1200px; /* 最大宽度限制，避免超宽屏幕变形 */
+            --element-spacing: 2rem; /* 元素间间距 */
+            --input-height: 2.5rem; /* 输入框高度放大 */
+        }
+        body {
+            margin: 0;
+            padding: var(--base-padding);
+            background: #f5f7fa;
+            color: #1f2933;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 新增：让body占据完整屏幕高度，内容垂直居中更自然 */
+            min-height: 80vh;
+            box-sizing: border-box; /* 避免padding导致页面溢出 */
+            line-height: 1.6; /* 优化文本可读性 */
+        }
+        h1 {
+            margin-bottom: var(--element-spacing);
+            font-size: 2.2rem; /* 标题放大，更醒目 */
+            font-weight: 700;
+            color: #1e293b; /* 加深标题颜色，提升层次感 */
+        }
+        /* 容器：统一控制表单和状态区的宽度和居中 */
+        .container {
+            width: var(--form-width);
+            max-width: var(--max-container-width);
+            display: flex;
+            flex-direction: column;
+            gap: var(--element-spacing); /* 表单和状态区之间的间距 */
+        }
+        form {
+            background: #ffffff;
+            border-radius: 16px; /* 轻微放大圆角，更现代 */
+            padding: 2.5rem; /* 增加内边距，避免内容拥挤 */
+            box-shadow: 0 12px 36px rgba(15, 35, 95, 0.12); /* 增强阴影，提升立体感 */
+            width: 100%;
+            box-sizing: border-box;
+        }
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0 0 1.8rem; /* 增加字段集间距 */
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.8rem; /* 增加标签与输入框间距 */
+            font-size: 1.1rem; /* 放大标签文字，更易读 */
+            color: #334155;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            height: var(--input-height); /* 使用变量统一高度 */
+            padding: 0.8rem 1.2rem; /* 优化内边距，输入区域更舒适 */
+            font-size: 1.1rem; /* 放大输入框文字 */
+            border: 1px solid #ccd4e0;
+            border-radius: 10px; /* 放大输入框圆角 */
+            transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        /* 输入框聚焦效果增强 */
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2); /* 扩大聚焦阴影范围 */
+            outline: none;
+            background-color: #f8fafc; /* 聚焦时轻微改变背景，反馈更明显 */
+        }
+        .hint {
+            font-size: 0.95rem; /* 放大提示文字 */
+            color: #52606d;
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+        button[type="submit"] {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center; /* 按钮文字居中 */
+            gap: 0.5rem;
+            padding: 0.8rem 2.2rem; /* 放大按钮内边距 */
+            font-size: 1.15rem; /* 放大按钮文字 */
+            font-weight: 600;
+            border: none;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: #ffffff;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+            height: 3rem; /* 固定按钮高度，更规整 */
+            min-width: 200px; /* 最小宽度，避免按钮过窄 */
+        }
+        button[type="submit"]:hover:not(:disabled) {
+            transform: translateY(-2px); /* 加大悬浮上移效果 */
+            box-shadow: 0 12px 24px rgba(37, 99, 235, 0.3); /* 增强悬浮阴影 */
+            background: linear-gradient(135deg, #2563eb, #1d4ed8); /* 悬浮时加深背景色 */
+        }
+        button[type="submit"]:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none; /* 禁用时取消变形 */
+            box-shadow: none; /* 禁用时取消阴影 */
+        }
+        .status {
+            padding: 2.5rem; /* 与表单内边距一致，视觉统一 */
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 12px 36px rgba(15, 35, 95, 0.12);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .status h2 {
+            margin-top: 0;
+            font-size: 1.6rem; /* 放大状态区标题 */
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+        }
+        .summary {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem; /* 放大摘要文字 */
+            color: #364152;
+            line-height: 1.6;
+        }
+        .message {
+            margin-bottom: 1.5rem; /* 增加消息区间距 */
+            padding: 1rem 1.4rem; /* 放大消息区内边距 */
+            border-radius: 10px;
+            background: #e0f2fe;
+            color: #0c4a6e;
+            display: none;
+            font-size: 1.05rem; /* 放大消息文字 */
+            line-height: 1.6;
+        }
+        .message.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        ol.results {
+            padding-left: 1.8rem; /* 调整列表缩进 */
+            margin: 0;
+        }
+        ol.results li {
+            margin-bottom: 1.2rem; /* 增加列表项间距 */
+            line-height: 1.7;
+            color: #27303f;
+            font-size: 1.05rem; /* 放大列表文字 */
+            padding: 0.8rem 0; /* 增加列表项上下内边距，更易区分 */
+            border-bottom: 1px solid #f1f5f9; /* 增加分隔线，提升可读性 */
+        }
+        /* 最后一个列表项取消分隔线 */
+        ol.results li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.3rem 0.8rem; /* 放大标签内边距 */
+            border-radius: 999px;
+            font-size: 0.85rem; /* 放大标签文字 */
+            font-weight: 600;
+            margin-right: 0.8rem;
+            margin-bottom: 0.5rem; /* 增加标签与内容的垂直间距 */
+        }
+        .tag.downloaded {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .tag.already_exists {
+            background: #e0f2fe;
+            color: #0c4a6e;
+        }
+        .tag.replaced_old_version {
+            background: #ede9fe;
+            color: #5b21b6;
+        }
+        .tag.failed {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        /* 响应式适配：屏幕小于768px时还原紧凑布局 */
+        @media (max-width: 768px) {
+            :root {
+                --form-width: 95%; /* 移动端宽度占95% */
+                --base-padding: 1rem;
+                --element-spacing: 1.5rem;
+                --input-height: 2.2rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            form, .status {
+                padding: 1.5rem;
+            }
+            button[type="submit"] {
+                width: 100%; /* 移动端按钮占满宽度 */
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body data-default-year-range="{{ default_year_range }}" data-default-max-num="{{ default_max_num }}" data-max-allowed-num="{{ max_allowed_num }}">
+     <h1>arXiv PDF 下载工具</h1>
+    <!-- 新增容器：统一控制表单和状态区的宽度 -->
+    <div class="container">
+        <form id="download-form" novalidate>
+            <fieldset>
+                <label for="keywords">关键词（必填）</label>
+                <input id="keywords" name="keywords" type="text" required placeholder="例如：AI medical imaging" />
+                <p class="hint">支持英文短语，多个关键词可用空格分隔。</p>
+            </fieldset>
+            <fieldset>
+                <label for="year_range">年份范围</label>
+                <input id="year_range" name="year_range" type="text" value="{{ default_year_range }}" placeholder="格式：YYYY-YYYY，例如 {{ default_year_range }}" />
+                <p class="hint">若留空将自动使用最近两年。</p>
+            </fieldset>
+            <fieldset>
+                <label for="max_num">最大数量</label>
+                <input id="max_num" name="max_num" type="number" min="1" max="{{ max_allowed_num }}" value="{{ default_max_num }}" />
+                <p class="hint">允许范围：1-{{ max_allowed_num }}，默认 {{ default_max_num }}。</p>
+            </fieldset>
+            <button type="submit" id="submit-btn">立即检索并下载</button>
+        </form>
+
+        <section class="status" aria-live="polite">
+            <h2>执行状态</h2>
+            <div id="message" class="message"></div>
+            <div id="summary" class="summary"></div>
+            <ol id="results" class="results"></ol>
+        </section>
+    </div>
+
+
+
+    <script>
+        const form = document.getElementById('download-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const messageBox = document.getElementById('message');
+        const summaryBox = document.getElementById('summary');
+        const resultsList = document.getElementById('results');
+
+        const settings = document.body.dataset;
+        const DEFAULT_MAX_NUM = Number(settings.defaultMaxNum) || 5;
+        const MAX_ALLOWED_NUM = Number(settings.maxAllowedNum) || 10;
+        const STATUS_LABEL_MAP = {
+            downloaded: '已下载',
+            already_exists: '已存在',
+            replaced_old_version: '已替换旧版',
+            failed: '失败'
+        };
+
+        function showMessage(text, isError = false) {
+            if (!text) {
+                messageBox.style.display = 'none';
+                messageBox.textContent = '';
+                messageBox.classList.remove('error');
+                return;
+            }
+            messageBox.textContent = text;
+            messageBox.classList.toggle('error', isError);
+            messageBox.style.display = 'block';
+        }
+
+        function setLoadingState(isLoading) {
+            submitBtn.disabled = isLoading;
+            submitBtn.textContent = isLoading ? '处理中…' : '立即检索并下载';
+        }
+
+        function validateInputs(data) {
+            if (!data.keywords.trim()) {
+                throw new Error('请输入关键词');
+            }
+            const yearRange = data.year_range.trim();
+            if (yearRange) {
+                const match = yearRange.match(/^\s*(\d{4})\s*-\s*(\d{4})\s*$/);
+                if (!match) {
+                    throw new Error('年份范围格式应为 YYYY-YYYY');
+                }
+                const startYear = parseInt(match[1], 10);
+                const endYear = parseInt(match[2], 10);
+                if (startYear > endYear) {
+                    throw new Error('年份范围起始值不能大于结束值');
+                }
+            }
+            let maxNum = parseInt(data.max_num, 10);
+            if (Number.isNaN(maxNum)) {
+                maxNum = DEFAULT_MAX_NUM;
+            }
+            if (maxNum < 1) maxNum = 1;
+            if (maxNum > MAX_ALLOWED_NUM) maxNum = MAX_ALLOWED_NUM;
+            data.max_num = String(maxNum);
+            return data;
+        }
+
+        function renderResults(results) {
+            resultsList.innerHTML = '';
+            results.forEach((item, index) => {
+                const li = document.createElement('li');
+                const status = item.status || 'unknown';
+                const statusLabel = STATUS_LABEL_MAP[status] || status;
+                const tag = document.createElement('span');
+                tag.className = `tag ${status}`;
+                tag.textContent = statusLabel;
+
+                const content = document.createElement('div');
+                const titleText = item.title || item.id_with_version || '未命名条目';
+                const nameText = item.file_name ? `文件：${item.file_name}` : '';
+                const reasonText = item.status === 'failed' && item.reason ? `原因：${item.reason}` : '';
+
+                content.textContent = `${index + 1}. ${titleText}`;
+                if (nameText) {
+                    content.appendChild(document.createElement('br'));
+                    content.appendChild(document.createTextNode(nameText));
+                }
+                if (reasonText) {
+                    content.appendChild(document.createElement('br'));
+                    content.appendChild(document.createTextNode(reasonText));
+                }
+
+                li.appendChild(tag);
+                li.appendChild(content);
+                resultsList.appendChild(li);
+            });
+        }
+
+        function renderSummary(summary) {
+            if (!summary) {
+                summaryBox.textContent = '';
+                return;
+            }
+            const total = summary.total || 0;
+            const downloaded = summary.downloaded || 0;
+            const exists = summary.already_exists || 0;
+            const replaced = summary.replaced_old_version || 0;
+            const failed = summary.failed || 0;
+            summaryBox.textContent = `共处理 ${total} 篇：已下载 ${downloaded}，已存在 ${exists}，已替换旧版 ${replaced}，失败 ${failed}`;
+        }
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            showMessage('');
+            summaryBox.textContent = '';
+            resultsList.innerHTML = '';
+
+            const formData = {
+                keywords: document.getElementById('keywords').value,
+                year_range: document.getElementById('year_range').value,
+                max_num: document.getElementById('max_num').value
+            };
+
+            let validated;
+            try {
+                validated = validateInputs({ ...formData });
+            } catch (error) {
+                showMessage(error.message, true);
+                return;
+            }
+
+            setLoadingState(true);
+            try {
+                const response = await fetch('/api/search', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(validated)
+                });
+
+                const data = await response.json();
+                if (!response.ok || !data.success) {
+                    const errorMsg = data && data.error ? data.error : '请求失败，请稍后重试';
+                    throw new Error(errorMsg);
+                }
+                renderSummary(data.summary);
+                renderResults(data.results || []);
+                showMessage('执行完成，可以在 pdf_files 目录查看文件。', false);
+            } catch (error) {
+                console.error(error);
+                showMessage(error.message || '请求失败，请稍后重试', true);
+            } finally {
+                setLoadingState(false);
+            }
+        });
+    </script>
+</body>
+</html>
