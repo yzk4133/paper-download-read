@@ -1,0 +1,1029 @@
+2025-10-04 00:04:31,967 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://26.26.26.1:5000
+2025-10-04 00:04:31,967 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-10-04 00:04:31,969 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:04:32,292 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:04:32,310 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:12:44,489 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://26.26.26.1:5000
+2025-10-04 00:12:44,490 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-10-04 00:12:44,491 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:12:44,818 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:12:44,822 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:12:48,982 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:12:48] "[33mGET / HTTP/1.1[0m" 404 -
+2025-10-04 00:13:25,041 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:13:25] "[32mGET /api HTTP/1.1[0m" 308 -
+2025-10-04 00:13:25,047 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:13:25] "[33mGET /api/ HTTP/1.1[0m" 404 -
+2025-10-04 00:13:25,304 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:13:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-04 00:18:38,053 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:18:38] "OPTIONS /api/parse/start HTTP/1.1" 200 -
+2025-10-04 00:18:38,302 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:18:38] "[35m[1mPOST /api/parse/start HTTP/1.1[0m" 501 -
+2025-10-04 00:18:43,617 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:18:43] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:18:43,932 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:18:44,210 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:18:45,328 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:18:45,340 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02315v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:18:45,508 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): arxiv.org:80
+2025-10-04 00:18:45,853 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02315v1 HTTP/1.1" 301 0
+2025-10-04 00:18:45,862 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): arxiv.org:443
+2025-10-04 00:18:46,517 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02315v1 HTTP/1.1" 200 11448404
+2025-10-04 00:18:47,852 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02314v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:18:48,018 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 00:18:48,314 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02314v1 HTTP/1.1" 301 0
+2025-10-04 00:18:48,409 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02314v1 HTTP/1.1" 200 10894241
+2025-10-04 00:18:49,433 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02307v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:18:49,667 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 00:18:50,982 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02307v1 HTTP/1.1" 301 0
+2025-10-04 00:18:51,071 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02307v1 HTTP/1.1" 200 2640122
+2025-10-04 00:18:51,344 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02302v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:18:51,524 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 00:18:51,909 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02302v1 HTTP/1.1" 301 0
+2025-10-04 00:18:52,002 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02302v1 HTTP/1.1" 200 739469
+2025-10-04 00:18:52,142 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02301v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:18:52,796 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 00:18:53,093 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02301v1 HTTP/1.1" 301 0
+2025-10-04 00:18:53,182 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02301v1 HTTP/1.1" 200 2222250
+2025-10-04 00:18:54,353 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:18:54] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:19:04,937 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:19:04] "OPTIONS /api/excel/generate HTTP/1.1" 200 -
+2025-10-04 00:19:05,251 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:19:05] "[35m[1mPOST /api/excel/generate HTTP/1.1[0m" 501 -
+2025-10-04 00:19:59,181 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:19:59] "[33mGET /api/excel/download HTTP/1.1[0m" 404 -
+2025-10-04 00:27:06,274 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\pdf_service.py', reloading
+2025-10-04 00:27:06,313 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:27:06,675 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:27:06,683 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:27:17,026 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\pdf_service.py', reloading
+2025-10-04 00:27:17,072 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:27:17,426 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:27:17,426 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:27:41,195 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\llm_service.py', reloading
+2025-10-04 00:27:41,232 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:27:41,587 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:27:41,590 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:27:58,139 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\excel_service.py', reloading
+2025-10-04 00:27:58,178 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:27:58,545 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:27:58,550 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:28:07,880 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\excel_service.py', reloading
+2025-10-04 00:28:07,921 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:28:08,276 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:28:08,278 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:28:45,433 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\state_manager.py', reloading
+2025-10-04 00:28:45,469 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:28:45,840 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:28:45,840 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:28:54,121 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\state_manager.py', reloading
+2025-10-04 00:28:54,168 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:28:54,530 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:28:54,533 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:29:30,642 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\parse_service.py', reloading
+2025-10-04 00:29:30,680 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:29:31,036 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:29:31,045 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:29:44,499 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\state_manager.py', reloading
+2025-10-04 00:29:44,536 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:29:44,905 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:29:44,910 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:30:39,569 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\api\\parse_api.py', reloading
+2025-10-04 00:30:39,606 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:30:40,020 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:30:40,024 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:30:49,406 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\api\\parse_api.py', reloading
+2025-10-04 00:30:49,462 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:30:49,841 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:30:49,841 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:31:04,383 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\api\\excel_api.py', reloading
+2025-10-04 00:31:04,426 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:44:35,106 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://26.26.26.1:5000
+2025-10-04 00:44:35,106 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-10-04 00:44:35,107 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:44:35,742 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:44:35,743 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:44:40,919 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:40] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:44:41,190 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:41] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:44:45,670 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:45] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:44:45,919 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:44:46,193 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:46] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:44:46,212 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:44:47,001 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:44:47,015 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:44:47,020 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:44:47,020 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:44:47,021 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:44:47,022 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:44:47,024 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:47] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:44:47,413 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:47] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:44:47,677 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:47] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:44:52,113 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:52] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:44:57,413 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:57] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:44:58,634 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:58] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:44:58,949 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:44:58] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:00,454 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:00] "OPTIONS /api/parse/start HTTP/1.1" 200 -
+2025-10-04 00:45:02,934 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:02] "POST /api/parse/start HTTP/1.1" 200 -
+2025-10-04 00:45:03,645 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:03] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:08,949 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:08] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:10,522 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:10] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:45:10,830 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:45:10,947 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:45:11,601 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:45:11,612 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:45:11,613 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:45:11,614 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:45:11,614 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:45:11,615 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:45:11,616 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:11] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:45:11,659 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:11] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:45:11,964 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:11] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:45:16,976 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:16] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:45:19,935 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:19] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:20,243 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:20] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:21,831 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:21] "OPTIONS /api/parse/start HTTP/1.1" 200 -
+2025-10-04 00:45:24,273 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:24] "POST /api/parse/start HTTP/1.1" 200 -
+2025-10-04 00:45:24,935 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:24] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:29,301 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:29,891 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:45:30,201 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:30] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:45:34,815 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:34] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:38,645 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:38] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:45:38,953 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:45:39,221 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:45:39,511 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:39] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:39,839 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:45:39,843 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:45:39,844 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:45:39,845 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:45:39,846 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:45:39,846 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:45:39,848 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:39] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:45:40,196 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:40] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:45:40,453 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:40] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:45:44,895 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:44] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:45:48,465 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:48] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:48,723 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:48] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:53,992 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:53] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:45:59,308 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:45:59] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:03,980 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:03] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:09,314 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:09] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:13,986 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:13] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:19,299 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:19] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:23,995 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:23] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:29,309 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:29,568 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:33,994 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:33] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:39,286 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:39] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:43,995 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:43] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:46:49,282 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:46:49] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:47:28,994 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:47:28] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:47:29,296 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:47:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:48:29,294 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:48:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:48:29,549 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:48:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:49:28,997 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:49:28] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:49:29,307 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:49:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:50:24,394 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:24] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:50:24,461 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:24] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:50:24,642 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:24] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:50:24,698 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:24] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:50:28,995 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:28] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:50:30,291 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:30] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:50:34,983 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:50:40,297 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:40] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:50:44,983 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:44] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:50:50,292 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:50] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:50:54,983 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:50:54] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:51:29,301 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:51:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:51:29,302 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:51:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:13,178 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:13] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:13,487 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:13] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:13,590 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:13,751 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:13,900 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:14,060 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:14] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:18,130 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:18] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:19,282 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:19] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:19,621 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:19] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:24,307 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:24] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:24,632 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:24] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:28,616 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:29,175 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:29,481 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:29,572 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:29,750 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:34,258 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:35,781 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:35] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:36,030 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:36] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:40,116 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:40] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:40,423 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:40] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:52:40,510 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:40] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:40,823 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:40] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:42,746 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:42] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:43,001 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:43] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:47,983 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:47] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:53,310 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:53] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:52:57,992 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:52:57] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:03,302 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:03] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:07,992 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:07] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:13,307 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:17,985 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:17] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:23,307 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:23] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:27,997 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:33,310 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:33] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:37,979 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:37] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:43,296 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:43] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:47,985 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:47] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:53,288 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:53] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:53:57,994 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:53:57] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:03,287 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:03] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:07,987 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:07] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:13,304 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:17,995 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:17] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:23,309 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:23] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:27,986 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:30,431 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:30] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:54:30,687 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:30] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:54:30,739 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:30] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:30,788 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:30] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:32,320 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:32] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:32,628 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:32] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:32,661 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:32] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:54:32,974 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:32] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:54:33,014 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:33] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:33,328 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:33] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:34,262 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:34,323 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:34] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:54:34,529 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:34,574 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:34] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:54:34,629 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:54:34,838 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:54:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:15,160 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:15] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:15,466 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:15] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:15,541 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:15] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:15,719 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:15] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:20,247 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:20] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:22,902 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:22] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:23,150 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:23] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:23,208 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:23] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:23,255 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:23] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:27,955 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:32,888 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://26.26.26.1:5000
+2025-10-04 00:55:32,888 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-10-04 00:55:32,888 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:55:33,570 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:55:33,573 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:55:33,641 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:33] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:38,371 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:38] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:38,675 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:38] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:38,722 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:38] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:39,032 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:39] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:39,346 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:39] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:39,658 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:39] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:41,315 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:41] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:55:41,563 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:55:41,684 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:55:42,483 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:55:42,493 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:55:42,494 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:55:42,494 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:55:42,496 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:55:42,497 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:55:42,499 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:42] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:55:43,427 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:43] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:47,013 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:47] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:55:47,267 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:55:47,463 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:55:48,090 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:55:48,101 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:55:48,102 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:55:48,104 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:55:48,104 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:55:48,105 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:55:48,107 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:48] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:55:48,425 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:48] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:55:50,806 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:50] "OPTIONS /api/parse/start HTTP/1.1" 200 -
+2025-10-04 00:55:53,225 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:53] "POST /api/parse/start HTTP/1.1" 200 -
+2025-10-04 00:55:53,520 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:53] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:53,826 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:53] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:55:58,832 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:55:58] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:03,524 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:03] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:08,838 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:08] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:10,917 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:10] "OPTIONS /api/excel/generate HTTP/1.1" 200 -
+2025-10-04 00:56:11,450 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:11] "[35m[1mPOST /api/excel/generate HTTP/1.1[0m" 500 -
+2025-10-04 00:56:13,521 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:18,843 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:18] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:23,998 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:23] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:29,294 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:33,986 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:33] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:39,033 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:39] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:43,525 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:43] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:49,298 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:49] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:53,988 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:53] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:56:59,285 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:56:59] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:57:03,988 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:57:03] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:57:09,287 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:57:09] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:57:13,985 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:57:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:57:19,293 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:57:19] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:57:23,981 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:57:23] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:57:29,317 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:57:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:57:33,986 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:57:33] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:57:39,289 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:57:39] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:57:43,980 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:57:43] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:58:19,876 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\llm_service.py', reloading
+2025-10-04 00:58:19,983 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:58:20,698 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:58:20,698 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:58:24,564 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://26.26.26.1:5000
+2025-10-04 00:58:24,565 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-10-04 00:58:24,566 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 00:58:25,212 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 00:58:25,212 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 00:58:29,746 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:29,783 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:58:30,014 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:30] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:30,055 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:30] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:58:30,094 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:30] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:30,333 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:30] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:31,216 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:31] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:58:31,522 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:58:31,751 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:58:32,568 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:58:32,575 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:58:32,575 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:58:32,576 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:58:32,577 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:58:32,577 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:58:32,579 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:32] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:58:34,448 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:34] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:35,298 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:35] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:36,849 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:36] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:58:37,153 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:58:37,440 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:58:38,123 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:58:38,134 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:58:38,135 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:58:38,136 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:58:38,136 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:58:38,137 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:58:38,139 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:38] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:58:39,447 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:39] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:45,295 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:45] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:49,999 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:49] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:55,204 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:55] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:58:56,453 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:56] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:58:56,761 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:58:56,952 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:58:57,574 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:58:57,577 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02315v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:58:58,199 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): arxiv.org:80
+2025-10-04 00:58:58,518 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02315v1 HTTP/1.1" 301 0
+2025-10-04 00:58:58,522 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): arxiv.org:443
+2025-10-04 00:58:59,107 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02315v1 HTTP/1.1" 200 11448404
+2025-10-04 00:58:59,448 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:58:59] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:59:00,419 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02314v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:59:00,563 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 00:59:00,860 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02314v1 HTTP/1.1" 301 0
+2025-10-04 00:59:00,951 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02314v1 HTTP/1.1" 200 10894241
+2025-10-04 00:59:01,557 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:01] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:59:01,817 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:01] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:59:02,101 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02307v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:59:02,324 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 00:59:02,579 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02307v1 HTTP/1.1" 301 0
+2025-10-04 00:59:02,669 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02307v1 HTTP/1.1" 200 2640122
+2025-10-04 00:59:02,938 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02302v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:59:03,178 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:03] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:59:03,486 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 00:59:03,502 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:03] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:59:03,782 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02302v1 HTTP/1.1" 301 0
+2025-10-04 00:59:03,871 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02302v1 HTTP/1.1" 200 739469
+2025-10-04 00:59:03,972 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02301v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:59:04,057 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:04] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:59:04,363 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:04] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:59:04,764 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 00:59:05,036 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02301v1 HTTP/1.1" 301 0
+2025-10-04 00:59:05,125 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02301v1 HTTP/1.1" 200 2222250
+2025-10-04 00:59:05,361 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:05] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:59:07,687 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:07] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:59:07,992 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 00:59:08,246 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 00:59:08,890 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3AAI+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10739
+2025-10-04 00:59:08,900 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 00:59:08,902 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 00:59:08,902 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02307v1-Ruozhen-He-noiseshift-resolution-aware-noise-recalibration-for-better-low-resolution-image.pdf
+2025-10-04 00:59:08,903 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02302v1-Qin-Shi-knowledge-distillation-detection-for-open-weights-models.pdf
+2025-10-04 00:59:08,904 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02301v1-Andrew-G.-Sullivan-relativistic-jets-and-winds-in-radio-identified-supermassive-black.pdf
+2025-10-04 00:59:08,906 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:08] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 00:59:09,059 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:09] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 00:59:11,241 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:11] "OPTIONS /api/parse/start HTTP/1.1" 200 -
+2025-10-04 00:59:13,779 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:13] "POST /api/parse/start HTTP/1.1" 200 -
+2025-10-04 00:59:13,863 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:14,167 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:14] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:18,465 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:18] "OPTIONS /api/excel/generate HTTP/1.1" 200 -
+2025-10-04 00:59:18,865 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:18] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:18,913 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:18] "POST /api/excel/generate HTTP/1.1" 200 -
+2025-10-04 00:59:20,935 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:20] "GET /api/excel/download HTTP/1.1" 200 -
+2025-10-04 00:59:24,197 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:24] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:28,866 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:34,173 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:38,877 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:38] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:44,189 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:44] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:48,867 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:48] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:54,185 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:54] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 00:59:58,876 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 00:59:58] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:04,184 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:04] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:08,994 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:08] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:14,293 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:14] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:18,992 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:18] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:24,300 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:24] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:28,991 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:34,292 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:38,989 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:38] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:44,302 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:44] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:48,990 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:48] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:54,303 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:54] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:00:58,991 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:00:58] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:01:04,297 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:01:04] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:01:28,987 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:01:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:02:29,291 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:02:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:03:28,996 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:03:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:04:29,291 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:04:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:05:28,982 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:05:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:06:29,300 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:06:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:07:28,993 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:07:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:08:29,295 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:08:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:09:28,996 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:09:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:10:29,299 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:10:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:11:28,982 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:11:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:12:29,297 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:12:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:13:28,992 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:13:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:14:29,295 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:14:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 01:15:28,989 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 01:15:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:24,824 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:24] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:34,347 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:37,551 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:37] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:37,861 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:37] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:37,953 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:37] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 11:18:40,512 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:40] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:42,997 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:42] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:48,321 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:48] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:49,945 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:49] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 11:18:50,440 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:50] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 11:18:50,486 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:50] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:50,799 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:50] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:18:55,486 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:18:55] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:00,186 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:00] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:03,497 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:03] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:08,985 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:08] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:13,515 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:18,198 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:18] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:23,496 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:23] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:28,190 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:33,511 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:33] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:38,979 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:38] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:44,283 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:44] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:48,974 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:48] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:54,290 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:54] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:19:58,982 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:19:58] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:20:04,283 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:20:04] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:20:08,983 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:20:08] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:20:14,287 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:20:14] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:20:18,980 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:20:18] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:20:24,295 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:20:24] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:20:28,982 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:20:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:20:34,291 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:20:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:20:38,976 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:20:38] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:20:44,283 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:20:44] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:21:26,975 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:21:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:22:27,296 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:22:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:23:27,302 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:23:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:24:26,979 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:24:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:25:27,300 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:25:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:26:26,995 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:26:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:27:27,293 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:27:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:28:27,302 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:28:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:29:26,988 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:29:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:30:27,301 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:30:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:31:26,993 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:31:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:32:27,296 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:32:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:33:26,993 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:33:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:34:27,294 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:34:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:35:26,985 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:35:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:36:27,299 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:36:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:37:26,994 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:37:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:37:34,486 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:37:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:37:38,191 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:37:38] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:37:44,289 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:37:44] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:37:48,978 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 11:37:48] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 11:37:51,146 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\llm_service.py', reloading
+2025-10-04 11:37:51,313 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 12:06:37,071 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://26.26.26.1:5000
+2025-10-04 12:06:37,072 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-10-04 12:06:37,075 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 12:06:38,570 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 12:06:38,575 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 12:06:51,290 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:06:51] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:06:51,293 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:06:51] "GET /api/system/storage HTTP/1.1" 200 -
+2025-10-04 12:06:51,553 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:06:51] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:06:51,607 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:06:51] "GET /api/system/storage HTTP/1.1" 200 -
+2025-10-04 12:06:55,989 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:06:55] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:01,298 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:01] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:05,984 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:05] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:11,302 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:11] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:13,703 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:13] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 12:07:15,166 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-fde73297-8dfd-4655-9fdd-fb31faeef406', 'json_data': {'messages': [{'content': 'Çë»ùÓÚÒÔÏÂÑÐ¾¿ÐèÇóÉú³É 5 ¸öÓ¢ÎÄ¼ìË÷¹Ø¼ü´Ê£¬Ã¿¸ö¹Ø¼ü´Ê 1-3 ¸öµ¥´Ê¡£Êä³ö JSON Êý×é£¬ÀýÈç ["keyword1", "keyword2"...]¡£Èç¹ûºÜÄÑÂú×ãÊýÁ¿£¬Çë¾¡Á¿Êä³ö¿ÉÐÐµÄ¹Ø¼ü´Ê¡£\n\nÐèÇóÃèÊö£º\nÉî¶ÈÑ§Ï°ÔÚÒ½Ñ§Ó°ÏñÕï¶ÏµÄ×îÐÂÓ¦ÓÃ', 'role': 'user'}], 'model': 'qwen-turbo', 'max_tokens': 1024, 'n': 1, 'stream': False, 'temperature': 0.5}}
+2025-10-04 12:07:15,210 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:07:15,214 [DEBUG] httpcore.connection: connect_tcp.started host='dashscope.aliyuncs.com' port=443 local_address=None timeout=None socket_options=None
+2025-10-04 12:07:15,226 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002571382C450>
+2025-10-04 12:07:15,227 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x00000257122DFDA0> server_hostname='dashscope.aliyuncs.com' timeout=None
+2025-10-04 12:07:15,287 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002571382C410>
+2025-10-04 12:07:15,287 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:15,288 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:07:15,288 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:07:15,289 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:07:15,290 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:15,984 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:15] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:16,039 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'7b641900-6dfa-4dd4-ae6a-9bdd7a1dd30c'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'722'), (b'req-arrive-time', b'1759550835142'), (b'resp-start-time', b'1759550835864'), (b'x-envoy-upstream-service-time', b'720'), (b'set-cookie', b'acw_tc=7b641900-6dfa-4dd4-ae6a-9bdd7a1dd30c947ad82f983d55b5129ef9b9e73b92c3;path=/;HttpOnly;Max-Age=1800'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:07:15 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:07:16,040 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:07:16,041 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:07:16,041 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:07:16,042 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:07:16,042 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:07:16,042 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '7b641900-6dfa-4dd4-ae6a-9bdd7a1dd30c', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '722', 'req-arrive-time': '1759550835142', 'resp-start-time': '1759550835864', 'x-envoy-upstream-service-time': '720', 'set-cookie': 'acw_tc=7b641900-6dfa-4dd4-ae6a-9bdd7a1dd30c947ad82f983d55b5129ef9b9e73b92c3;path=/;HttpOnly;Max-Age=1800', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:07:15 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:07:16,043 [DEBUG] openai._base_client: request_id: 7b641900-6dfa-4dd4-ae6a-9bdd7a1dd30c
+2025-10-04 12:07:16,050 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3ADeep+learning+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 12:07:16,195 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 12:07:17,415 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3ADeep+learning+medical+imaging&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 10736
+2025-10-04 12:07:17,427 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 12:07:17,429 [INFO] app.services.crawl_service: Ìø¹ýÒÑ´æÔÚÎÄ¼þ: C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02314v1-Bo-Hsu-Ke-stealthattack-robust-3d-gaussian-splatting-poisoning-via-density-guided.pdf
+2025-10-04 12:07:17,432 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02313v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02313v1-Mengyu-Yang-clink-chop-thud-learning-object-sounds-from.pdf
+2025-10-04 12:07:17,722 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): arxiv.org:80
+2025-10-04 12:07:18,087 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02313v1 HTTP/1.1" 301 0
+2025-10-04 12:07:18,089 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): arxiv.org:443
+2025-10-04 12:07:18,758 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02313v1 HTTP/1.1" 200 6388619
+2025-10-04 12:07:19,573 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02312v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02312v1-Anna-Kuzina-kava-latent-reasoning-via-compressed-kv-cache-distillation.pdf
+2025-10-04 12:07:19,832 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 12:07:20,123 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02312v1 HTTP/1.1" 301 0
+2025-10-04 12:07:20,211 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02312v1 HTTP/1.1" 200 1958162
+2025-10-04 12:07:20,420 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02311v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02311v1-Guanqi-Zhan-inferring-dynamic-physical-properties-from-video-foundation-models.pdf
+2025-10-04 12:07:20,948 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 12:07:21,196 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02311v1 HTTP/1.1" 301 0
+2025-10-04 12:07:21,284 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02311v1 HTTP/1.1" 200 12656734
+2025-10-04 12:07:22,293 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:22] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:22,552 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:22] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 12:07:26,452 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:26,984 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:29,296 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:30,986 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:30] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:32,053 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:32] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:32,113 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:32] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:32,315 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:32] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:32,361 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:32] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:32,986 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:32] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:33,298 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:33] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:33,338 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:33] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:33,648 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:33] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:34,199 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:34,231 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:34] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:34,466 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:34] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:34,508 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:34] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:36,138 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:36] "OPTIONS /api/parse/start HTTP/1.1" 200 -
+2025-10-04 12:07:36,878 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:07:36,878 [DEBUG] httpcore.connection: close.started
+2025-10-04 12:07:36,878 [DEBUG] httpcore.connection: close.complete
+2025-10-04 12:07:36,879 [DEBUG] httpcore.connection: connect_tcp.started host='dashscope.aliyuncs.com' port=443 local_address=None timeout=None socket_options=None
+2025-10-04 12:07:36,886 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000025713887950>
+2025-10-04 12:07:36,886 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x00000257122DFDA0> server_hostname='dashscope.aliyuncs.com' timeout=None
+2025-10-04 12:07:36,951 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002571387F2D0>
+2025-10-04 12:07:36,952 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:36,952 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:07:36,953 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:07:36,953 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:07:36,954 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:37,765 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'7c7f0a27-622d-4b73-b0b3-fca2b798b9fc'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'781'), (b'req-arrive-time', b'1759550856809'), (b'resp-start-time', b'1759550857591'), (b'x-envoy-upstream-service-time', b'778'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:07:37 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:07:37,767 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:07:37,768 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:07:37,769 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:07:37,769 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:07:37,770 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:07:37,770 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '7c7f0a27-622d-4b73-b0b3-fca2b798b9fc', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '781', 'req-arrive-time': '1759550856809', 'resp-start-time': '1759550857591', 'x-envoy-upstream-service-time': '778', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:07:37 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:07:37,771 [DEBUG] openai._base_client: request_id: 7c7f0a27-622d-4b73-b0b3-fca2b798b9fc
+2025-10-04 12:07:38,241 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:07:38,241 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:38,241 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:07:38,244 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:07:38,245 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:07:38,246 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:38,925 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:38] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:07:38,956 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'fa489c3e-0346-4091-bb70-46615158bdcd'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'681'), (b'req-arrive-time', b'1759550858101'), (b'resp-start-time', b'1759550858782'), (b'x-envoy-upstream-service-time', b'678'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:07:38 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:07:38,958 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:07:38,958 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:07:38,958 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:07:38,959 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:07:38,959 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:07:38,959 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'fa489c3e-0346-4091-bb70-46615158bdcd', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '681', 'req-arrive-time': '1759550858101', 'resp-start-time': '1759550858782', 'x-envoy-upstream-service-time': '678', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:07:38 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:07:38,960 [DEBUG] openai._base_client: request_id: fa489c3e-0346-4091-bb70-46615158bdcd
+2025-10-04 12:07:39,209 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-088179b0-029b-4758-8d9d-44c25131e17e', 'json_data': {'messages': [{'content': 'ÄãÊÇÒ»Ãû¿ÆÑÐÖúÊÖ£¬ÇëÔÄ¶Á¸ø¶¨ÂÛÎÄÎÄ±¾£¬ÌáÈ¡¡®´´ÐÂµã¡¯¡¢¡®ÊÔÑé·½·¨¡¯¡¢¡®½áÂÛ¡¯ÈýÏîÕªÒª¡£Ã¿¸ö×Ö¶Î²»³¬¹ý 50 ¸öºº×Ö£¬Èç¹ûÐÅÏ¢È±Ê§ÇëÊä³ö¡®ÔÝÎÞÐÅÏ¢¡¯¡£ÇëÑÏ¸ñ·µ»Ø JSON ¶ÔÏó£¬¼ü°üº¬ innovation, method, conclusion£¬ÖµÎª×Ö·û´®¡£\n\nÂÛÎÄÕýÎÄÈçÏÂ£º\n---\nClink! Chop! Thud! ¨C Learning Object Sounds from Real-World Interactions Mengyu Yang1Yiming Chen1Haozheng Pei1Siddhant Agarwal1 Arun Balajee Vasudevan2James Hays1 1Georgia Institute of Technology2Carnegie Mellon University Project Page:https://clink-chop-thud.github.io/ Which objects are sounding in this interaction? Figure 1. Humans handle a wide variety of objects throughout the day and many of these interactions produce sounds. We introduce a multimodalobject-awareframework that learns the relationship between the objects in an interaction and the resulting sounds. This enables our model to detect thesounding objectsfrom a set of candidates in a scene. Abstract Can a model distinguish between the sound of a spoon hit- ting a hardwood floor versus a carpeted one? Everyday object interactions produce sounds unique to the objects in- volved. We introduce the sounding object detection task to evaluate a model¡¯s ability to link these sounds to the objects directly involved. Inspired by human perception, our multi- modal object-aware framework learns from in-the-wild ego- centric videos. To encourage an object-centric approach, we first develop an automatic pipeline to compute segmen- tation masks of the objects involved to guide the model¡¯s focus during training towards the most informative regions of the interaction. A slot attention visual encoder is used to further enforce an object prior. We demonstrate state of the art performance on our new task along with existing multi- modal action understanding tasks. 1. Introduction Humans interact with many physical objects throughout the day. Oftentimes, interacting with an object results in a dis- tinct sound that provides informative cues about that action and the objects involved. The sound produced when a knife cuts through an onion is distinct from the sound made whenthe knife hits the chopping board. Humans can listen to the unique sounds of these object interactions and make cross- modal inferences about the objects involved. After hearing a sound, we can look at a visual scene and latch onto its focal region. For example, if we hear the sound of oil siz- zling, we do not first look at the sink next to the stove but instead direct our attention to the person stirring food in a pan. This is a biological phenomenon where humans per- ceive their surroundings by concentrating on key regions in a scene [19, 37]. While humans excel at distinguish- ing these sounds, current learning methods face challenges. Unlike the typical video datasets used in multimodal train- ing [4, 8, 15], which feature predefined sound categories (e.g. vehicles, animals), differentiating the impact sound caused by different materials is more subtle. This shortcom- ing is compounded by vision frameworks relying on global features that take the whole scene as input [3, 5, 25, 41]. Meanwhile, understanding object interactions requires a lo- calized, object-centric approach. We evaluate a model¡¯s understanding of the relationship between object interactions and sound by proposing the sounding object detection task. Given a set of object re- gions present in a scene and the sound of an interaction, the model predicts which object is directly involved in produc- 1arXiv:2510.02313v1 [cs.CV] 2 Oct 2025 ing the sound. To test this, we introduce a manually an- notated benchmark containing segmentation masks of the ground truth objects. We further evaluate the model¡¯s un- derstanding of sounds and object interactions by having it predict whether the existing sound is caused by the inter- action in the first place. This task, called sounding action discovery, was first proposed by Chenet al. [6]. We demon- strate that with our method, we outperform existing multi- modal techniques on both tasks. We do so by taking inspiration from natural human per- ception and develop a multimodalobject-awareframework to guide our model to explicitly focus on the informative regions of an object interaction. We leverage in-the-wild egocentric videos of interactions from Ego4D [18] and Epic Kitchens [10], with the benefits being twofold: 1) The large scale of these datasets means that a wide range of objects and object interactions are captured, including long-tail ex- amples, and 2) having an egocentric point of view means most actions occur in the near field, making the objects more visible and the interactions more audible. While existing works have studied frameworks that fo- cus on objects to reduce visual redundancy and learn a more compact representation [11, 26, 35, 47], these works only learn from a single modality and exclude the additional information gained by associating object interactions with sounds. There are a few works on multimodal object-centric representation learning [13, 14] but the data they train on is synthetic or laboratory-collected. Such methods do not scale well if we want to learn about the wide range of ob- ject interactions that occur in daily life. To help our method scale to these larger datasets, we de- velop an automatic pipeline that leverages an off-the-shelf hand-object interaction detection model [36] to automati- cally annotate our training data with object segmentation masks. These masks inform our model on which visual patch features to sample, guiding its focus towards the re- gions of the object interaction and learning an object-aware representation in the process. To further equip our model with a strong object prior, we initialize our visual encoder with a pretrained slot attention model [21]. These archi- tectures contain a bottleneck attention module which learn to compress visual features intokoutput vectors called slots [26]. Through training, each slot learns to attend to unique objects and creates object-centric boundaries. Us- ing our multimodal object-aware approach, we aim to learn the unique correlations between an object interaction and the sound it produces. To do so, we introduce the sound- ing object detection task along with a manually annotated benchmark and demonstrate state of the art performance. 2. Related Work Multimodal representation learningMultimodal repre- sentation learning unifies vision, audio, language, and othermodalities through contrastive and self-supervised learning. Contrastive learning on large-scale datasets have enabled vision-language pretraining for zero-shot classification and retrieval, later extending to audio-text alignment [30, 42]. In ImageBind [16], a unified embedding space is learned across a range of modalities to enable cross-modal asso- ciations without direct supervision. This was later refined by mapping all modalities to language for stronger seman- tic consistency [48]. In other works, [45] supports twelve modalities with different tokenization techniques using a scalable multimodal framework. In [6], the authors develop a contrastive-consensus loss framework to learn how ac- tions sound from egocentric videos. The loss refines audio- vision-language embeddings to better associate actions with their characteristic sounds. Our work relies on similar con- trastive frameworks to learn from egocentric videos, but we employ an object-aware approach that enables our model to reason about localized object interactions. Object representationsTraditional deep learning mod- els typically analyze entire scenes without distinguish- ing between individual objects, leading to inefficiencies which object-centric learning aims to address. In [46], object-guided token sampling and attention are used to en- hance action recognition in video transformers. Addition- ally, slot attention models [26] use a bottleneck attention module to compress image features intokslot vectors. Through an iterative attention mechanism, slots learn to at- tend to individual object regions, forming object segmen- tation masks. [21] introduced improvements to the original slot attention model by using a student-teacher framework. Finally, [13, 14] introduced a multimodal dataset to capture h\n---', 'role': 'user'}], 'model': 'qwen-turbo', 'max_tokens': 1024, 'n': 1, 'stream': False, 'temperature': 0.5}}
+2025-10-04 12:07:39,212 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:07:39,212 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:39,213 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:07:39,213 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:07:39,214 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:07:39,214 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:40,020 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'39fc63b2-c27a-418f-9bc5-2bce3eb522fd'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'776'), (b'req-arrive-time', b'1759550859070'), (b'resp-start-time', b'1759550859846'), (b'x-envoy-upstream-service-time', b'774'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:07:39 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:07:40,022 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:07:40,023 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:07:40,024 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:07:40,024 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:07:40,025 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:07:40,025 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '39fc63b2-c27a-418f-9bc5-2bce3eb522fd', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '776', 'req-arrive-time': '1759550859070', 'resp-start-time': '1759550859846', 'x-envoy-upstream-service-time': '774', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:07:39 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:07:40,025 [DEBUG] openai._base_client: request_id: 39fc63b2-c27a-418f-9bc5-2bce3eb522fd
+2025-10-04 12:07:40,885 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:07:40,885 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:40,885 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:07:40,888 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:07:40,888 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:07:40,889 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:41,808 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'67eae5b2-3e89-4eb0-9693-077a89b42e45'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'889'), (b'req-arrive-time', b'1759550860744'), (b'resp-start-time', b'1759550861633'), (b'x-envoy-upstream-service-time', b'886'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:07:41 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:07:41,809 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:07:41,810 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:07:41,811 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:07:41,812 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:07:41,812 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:07:41,813 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '67eae5b2-3e89-4eb0-9693-077a89b42e45', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '889', 'req-arrive-time': '1759550860744', 'resp-start-time': '1759550861633', 'x-envoy-upstream-service-time': '886', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:07:41 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:07:41,813 [DEBUG] openai._base_client: request_id: 67eae5b2-3e89-4eb0-9693-077a89b42e45
+2025-10-04 12:07:42,399 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:07:42,399 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:42,404 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:07:42,404 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:07:42,406 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:07:42,406 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:07:43,276 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'afe1bab2-984c-4a78-9053-78512f964e7c'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'837'), (b'req-arrive-time', b'1759550862261'), (b'resp-start-time', b'1759550863098'), (b'x-envoy-upstream-service-time', b'834'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:07:42 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:07:43,277 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:07:43,277 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:07:43,278 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:07:43,278 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:07:43,279 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:07:43,279 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'afe1bab2-984c-4a78-9053-78512f964e7c', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '837', 'req-arrive-time': '1759550862261', 'resp-start-time': '1759550863098', 'x-envoy-upstream-service-time': '834', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:07:42 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:07:43,279 [DEBUG] openai._base_client: request_id: afe1bab2-984c-4a78-9053-78512f964e7c
+2025-10-04 12:07:43,281 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:43] "POST /api/parse/start HTTP/1.1" 200 -
+2025-10-04 12:07:43,672 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:43] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:43,920 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:43] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:48,365 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:48] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:53,685 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:53] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:58,360 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:58] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:07:59,777 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:07:59] "OPTIONS /api/excel/generate HTTP/1.1" 200 -
+2025-10-04 12:08:00,291 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:00] "POST /api/excel/generate HTTP/1.1" 200 -
+2025-10-04 12:08:01,553 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:01] "GET /api/excel/download HTTP/1.1" 200 -
+2025-10-04 12:08:03,359 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:03] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:09,288 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:09] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:13,377 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:13] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:16,068 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:16] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:16,311 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:16] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:20,990 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:20] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:26,291 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:26,985 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:27,402 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:27,658 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:28,542 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:28] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:28,859 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:28] "GET /api/system/storage HTTP/1.1" 200 -
+2025-10-04 12:08:28,860 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:28] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:28,960 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:29,167 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:29] "GET /api/system/storage HTTP/1.1" 200 -
+2025-10-04 12:08:29,265 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:29] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:30,812 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:30] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:31,069 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:31] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:32,983 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:32] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:35,813 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:35] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:37,985 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:37] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:40,813 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:40] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:42,989 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:42] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:45,812 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:45] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:47,985 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:47] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:50,813 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:50] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:52,973 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:52] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:55,829 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:55] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:08:57,207 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:57] "OPTIONS /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 12:08:57,519 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-da9c4ce5-6e9b-44cc-b724-77763d0cab60', 'json_data': {'messages': [{'content': 'Çë»ùÓÚÒÔÏÂÑÐ¾¿ÐèÇóÉú³É 5 ¸öÓ¢ÎÄ¼ìË÷¹Ø¼ü´Ê£¬Ã¿¸ö¹Ø¼ü´Ê 1-3 ¸öµ¥´Ê¡£Êä³ö JSON Êý×é£¬ÀýÈç ["keyword1", "keyword2"...]¡£Èç¹ûºÜÄÑÂú×ãÊýÁ¿£¬Çë¾¡Á¿Êä³ö¿ÉÐÐµÄ¹Ø¼ü´Ê¡£\n\nÐèÇóÃèÊö£º\n´óÔ¤ÑÔÄ£ÐÍµÄ×îÐÂ½øÕ¹', 'role': 'user'}], 'model': 'qwen-turbo', 'max_tokens': 1024, 'n': 1, 'stream': False, 'temperature': 0.5}}
+2025-10-04 12:08:57,523 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:08:57,523 [DEBUG] httpcore.connection: close.started
+2025-10-04 12:08:57,525 [DEBUG] httpcore.connection: close.complete
+2025-10-04 12:08:57,525 [DEBUG] httpcore.connection: connect_tcp.started host='dashscope.aliyuncs.com' port=443 local_address=None timeout=None socket_options=None
+2025-10-04 12:08:57,531 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002571665A790>
+2025-10-04 12:08:57,532 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x00000257122DFDA0> server_hostname='dashscope.aliyuncs.com' timeout=None
+2025-10-04 12:08:57,592 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002571657E890>
+2025-10-04 12:08:57,593 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:08:57,594 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:08:57,594 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:08:57,595 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:08:57,595 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:08:57,981 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:08:57] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:08:58,173 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'c2629c64-ad05-41b4-9d6e-df67826045cc'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'550'), (b'req-arrive-time', b'1759550937448'), (b'resp-start-time', b'1759550937999'), (b'x-envoy-upstream-service-time', b'549'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:08:57 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:08:58,174 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:08:58,175 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:08:58,175 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:08:58,175 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:08:58,176 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:08:58,176 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'c2629c64-ad05-41b4-9d6e-df67826045cc', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '550', 'req-arrive-time': '1759550937448', 'resp-start-time': '1759550937999', 'x-envoy-upstream-service-time': '549', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:08:57 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:08:58,177 [DEBUG] openai._base_client: request_id: c2629c64-ad05-41b4-9d6e-df67826045cc
+2025-10-04 12:08:58,178 [INFO] app.services.crawl_service: ÇëÇó arXiv API: https://export.arxiv.org/api/query?search_query=all%3ALarge+language+models&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending
+2025-10-04 12:08:58,297 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): export.arxiv.org:443
+2025-10-04 12:08:59,354 [DEBUG] urllib3.connectionpool: https://export.arxiv.org:443 "GET /api/query?search_query=all%3ALarge+language+models&start=0&max_results=15&sortBy=submittedDate&sortOrder=descending HTTP/1.1" 200 7650
+2025-10-04 12:08:59,357 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02315v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02315v1-Eric-Tillmann-Bill-optimal-control-meets-flow-matching-a-principled-route.pdf
+2025-10-04 12:08:59,638 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): arxiv.org:80
+2025-10-04 12:08:59,924 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02315v1 HTTP/1.1" 301 0
+2025-10-04 12:08:59,929 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): arxiv.org:443
+2025-10-04 12:09:00,591 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02315v1 HTTP/1.1" 200 11448404
+2025-10-04 12:09:00,806 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:00] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:09:01,914 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02313v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02313v1-Mengyu-Yang-clink-chop-thud-learning-object-sounds-from.pdf
+2025-10-04 12:09:02,132 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 12:09:02,382 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02313v1 HTTP/1.1" 301 0
+2025-10-04 12:09:02,474 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02313v1 HTTP/1.1" 200 6388619
+2025-10-04 12:09:03,150 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02312v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02312v1-Anna-Kuzina-kava-latent-reasoning-via-compressed-kv-cache-distillation.pdf
+2025-10-04 12:09:03,354 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 12:09:03,627 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02312v1 HTTP/1.1" 301 0
+2025-10-04 12:09:03,721 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02312v1 HTTP/1.1" 200 1958162
+2025-10-04 12:09:04,063 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02311v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02311v1-Guanqi-Zhan-inferring-dynamic-physical-properties-from-video-foundation-models.pdf
+2025-10-04 12:09:04,538 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 12:09:04,819 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02311v1 HTTP/1.1" 301 0
+2025-10-04 12:09:04,909 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02311v1 HTTP/1.1" 200 12656734
+2025-10-04 12:09:05,823 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:05] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:09:06,125 [INFO] app.services.crawl_service: ÏÂÔØ PDF: http://arxiv.org/pdf/2510.02310v1 -> C:\home\sandbox\arXiv_Download_Site\backend\pdf_files\2025-2510.02310v1-Hooman-Davoudiasl-astrophysical-consequences-of-an-electroweak-etaw-pseudo-scalar.pdf
+2025-10-04 12:09:06,360 [DEBUG] urllib3.connectionpool: Resetting dropped connection: arxiv.org
+2025-10-04 12:09:06,633 [DEBUG] urllib3.connectionpool: http://arxiv.org:80 "GET /pdf/2510.02310v1 HTTP/1.1" 301 0
+2025-10-04 12:09:06,724 [DEBUG] urllib3.connectionpool: https://arxiv.org:443 "GET /pdf/2510.02310v1 HTTP/1.1" 200 330957
+2025-10-04 12:09:06,773 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:06] "POST /api/crawl/search HTTP/1.1" 200 -
+2025-10-04 12:09:10,816 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:10] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:09:11,078 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:11] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:11,188 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:11] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:15,893 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:15] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:18,516 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:18] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:09:18,783 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:18] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:09:20,054 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:20] "OPTIONS /api/parse/start HTTP/1.1" 200 -
+2025-10-04 12:09:20,734 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:09:20,734 [DEBUG] httpcore.connection: close.started
+2025-10-04 12:09:20,734 [DEBUG] httpcore.connection: close.complete
+2025-10-04 12:09:20,738 [DEBUG] httpcore.connection: connect_tcp.started host='dashscope.aliyuncs.com' port=443 local_address=None timeout=None socket_options=None
+2025-10-04 12:09:20,747 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000025713EF3950>
+2025-10-04 12:09:20,748 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x00000257122DFDA0> server_hostname='dashscope.aliyuncs.com' timeout=None
+2025-10-04 12:09:20,810 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000025716792490>
+2025-10-04 12:09:20,810 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:20,811 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:09:20,811 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:09:20,812 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:09:20,813 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:21,600 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'bd5e7492-0176-4e02-a4fe-326018aee6ce'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'759'), (b'req-arrive-time', b'1759550960665'), (b'resp-start-time', b'1759550961425'), (b'x-envoy-upstream-service-time', b'755'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:09:21 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:09:21,601 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:09:21,602 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:09:21,602 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:09:21,604 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:09:21,604 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:09:21,604 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'bd5e7492-0176-4e02-a4fe-326018aee6ce', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '759', 'req-arrive-time': '1759550960665', 'resp-start-time': '1759550961425', 'x-envoy-upstream-service-time': '755', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:09:21 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:09:21,605 [DEBUG] openai._base_client: request_id: bd5e7492-0176-4e02-a4fe-326018aee6ce
+2025-10-04 12:09:21,920 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-1a175898-0492-48f3-a932-3c7b8569ed3f', 'json_data': {'messages': [{'content': 'ÄãÊÇÒ»Ãû¿ÆÑÐÖúÊÖ£¬ÇëÔÄ¶Á¸ø¶¨ÂÛÎÄÎÄ±¾£¬ÌáÈ¡¡®´´ÐÂµã¡¯¡¢¡®ÊÔÑé·½·¨¡¯¡¢¡®½áÂÛ¡¯ÈýÏîÕªÒª¡£Ã¿¸ö×Ö¶Î²»³¬¹ý 50 ¸öºº×Ö£¬Èç¹ûÐÅÏ¢È±Ê§ÇëÊä³ö¡®ÔÝÎÞÐÅÏ¢¡¯¡£ÇëÑÏ¸ñ·µ»Ø JSON ¶ÔÏó£¬¼ü°üº¬ innovation, method, conclusion£¬ÖµÎª×Ö·û´®¡£\n\nÂÛÎÄÕýÎÄÈçÏÂ£º\n---\nClink! Chop! Thud! ¨C Learning Object Sounds from Real-World Interactions Mengyu Yang1Yiming Chen1Haozheng Pei1Siddhant Agarwal1 Arun Balajee Vasudevan2James Hays1 1Georgia Institute of Technology2Carnegie Mellon University Project Page:https://clink-chop-thud.github.io/ Which objects are sounding in this interaction? Figure 1. Humans handle a wide variety of objects throughout the day and many of these interactions produce sounds. We introduce a multimodalobject-awareframework that learns the relationship between the objects in an interaction and the resulting sounds. This enables our model to detect thesounding objectsfrom a set of candidates in a scene. Abstract Can a model distinguish between the sound of a spoon hit- ting a hardwood floor versus a carpeted one? Everyday object interactions produce sounds unique to the objects in- volved. We introduce the sounding object detection task to evaluate a model¡¯s ability to link these sounds to the objects directly involved. Inspired by human perception, our multi- modal object-aware framework learns from in-the-wild ego- centric videos. To encourage an object-centric approach, we first develop an automatic pipeline to compute segmen- tation masks of the objects involved to guide the model¡¯s focus during training towards the most informative regions of the interaction. A slot attention visual encoder is used to further enforce an object prior. We demonstrate state of the art performance on our new task along with existing multi- modal action understanding tasks. 1. Introduction Humans interact with many physical objects throughout the day. Oftentimes, interacting with an object results in a dis- tinct sound that provides informative cues about that action and the objects involved. The sound produced when a knife cuts through an onion is distinct from the sound made whenthe knife hits the chopping board. Humans can listen to the unique sounds of these object interactions and make cross- modal inferences about the objects involved. After hearing a sound, we can look at a visual scene and latch onto its focal region. For example, if we hear the sound of oil siz- zling, we do not first look at the sink next to the stove but instead direct our attention to the person stirring food in a pan. This is a biological phenomenon where humans per- ceive their surroundings by concentrating on key regions in a scene [19, 37]. While humans excel at distinguish- ing these sounds, current learning methods face challenges. Unlike the typical video datasets used in multimodal train- ing [4, 8, 15], which feature predefined sound categories (e.g. vehicles, animals), differentiating the impact sound caused by different materials is more subtle. This shortcom- ing is compounded by vision frameworks relying on global features that take the whole scene as input [3, 5, 25, 41]. Meanwhile, understanding object interactions requires a lo- calized, object-centric approach. We evaluate a model¡¯s understanding of the relationship between object interactions and sound by proposing the sounding object detection task. Given a set of object re- gions present in a scene and the sound of an interaction, the model predicts which object is directly involved in produc- 1arXiv:2510.02313v1 [cs.CV] 2 Oct 2025 ing the sound. To test this, we introduce a manually an- notated benchmark containing segmentation masks of the ground truth objects. We further evaluate the model¡¯s un- derstanding of sounds and object interactions by having it predict whether the existing sound is caused by the inter- action in the first place. This task, called sounding action discovery, was first proposed by Chenet al. [6]. We demon- strate that with our method, we outperform existing multi- modal techniques on both tasks. We do so by taking inspiration from natural human per- ception and develop a multimodalobject-awareframework to guide our model to explicitly focus on the informative regions of an object interaction. We leverage in-the-wild egocentric videos of interactions from Ego4D [18] and Epic Kitchens [10], with the benefits being twofold: 1) The large scale of these datasets means that a wide range of objects and object interactions are captured, including long-tail ex- amples, and 2) having an egocentric point of view means most actions occur in the near field, making the objects more visible and the interactions more audible. While existing works have studied frameworks that fo- cus on objects to reduce visual redundancy and learn a more compact representation [11, 26, 35, 47], these works only learn from a single modality and exclude the additional information gained by associating object interactions with sounds. There are a few works on multimodal object-centric representation learning [13, 14] but the data they train on is synthetic or laboratory-collected. Such methods do not scale well if we want to learn about the wide range of ob- ject interactions that occur in daily life. To help our method scale to these larger datasets, we de- velop an automatic pipeline that leverages an off-the-shelf hand-object interaction detection model [36] to automati- cally annotate our training data with object segmentation masks. These masks inform our model on which visual patch features to sample, guiding its focus towards the re- gions of the object interaction and learning an object-aware representation in the process. To further equip our model with a strong object prior, we initialize our visual encoder with a pretrained slot attention model [21]. These archi- tectures contain a bottleneck attention module which learn to compress visual features intokoutput vectors called slots [26]. Through training, each slot learns to attend to unique objects and creates object-centric boundaries. Us- ing our multimodal object-aware approach, we aim to learn the unique correlations between an object interaction and the sound it produces. To do so, we introduce the sound- ing object detection task along with a manually annotated benchmark and demonstrate state of the art performance. 2. Related Work Multimodal representation learningMultimodal repre- sentation learning unifies vision, audio, language, and othermodalities through contrastive and self-supervised learning. Contrastive learning on large-scale datasets have enabled vision-language pretraining for zero-shot classification and retrieval, later extending to audio-text alignment [30, 42]. In ImageBind [16], a unified embedding space is learned across a range of modalities to enable cross-modal asso- ciations without direct supervision. This was later refined by mapping all modalities to language for stronger seman- tic consistency [48]. In other works, [45] supports twelve modalities with different tokenization techniques using a scalable multimodal framework. In [6], the authors develop a contrastive-consensus loss framework to learn how ac- tions sound from egocentric videos. The loss refines audio- vision-language embeddings to better associate actions with their characteristic sounds. Our work relies on similar con- trastive frameworks to learn from egocentric videos, but we employ an object-aware approach that enables our model to reason about localized object interactions. Object representationsTraditional deep learning mod- els typically analyze entire scenes without distinguish- ing between individual objects, leading to inefficiencies which object-centric learning aims to address. In [46], object-guided token sampling and attention are used to en- hance action recognition in video transformers. Addition- ally, slot attention models [26] use a bottleneck attention module to compress image features intokslot vectors. Through an iterative attention mechanism, slots learn to at- tend to individual object regions, forming object segmen- tation masks. [21] introduced improvements to the original slot attention model by using a student-teacher framework. Finally, [13, 14] introduced a multimodal dataset to capture h\n---', 'role': 'user'}], 'model': 'qwen-turbo', 'max_tokens': 1024, 'n': 1, 'stream': False, 'temperature': 0.5}}
+2025-10-04 12:09:21,921 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:09:21,921 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:21,924 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:09:21,924 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:09:21,924 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:09:21,925 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:22,856 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'd9dd5c8b-d693-4833-a57c-b3c371b1279c'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'903'), (b'req-arrive-time', b'1759550961778'), (b'resp-start-time', b'1759550962681'), (b'x-envoy-upstream-service-time', b'900'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:09:22 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:09:22,857 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:09:22,857 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:09:22,858 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:09:22,859 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:09:22,860 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:09:22,861 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'd9dd5c8b-d693-4833-a57c-b3c371b1279c', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '903', 'req-arrive-time': '1759550961778', 'resp-start-time': '1759550962681', 'x-envoy-upstream-service-time': '900', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:09:22 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:09:22,861 [DEBUG] openai._base_client: request_id: d9dd5c8b-d693-4833-a57c-b3c371b1279c
+2025-10-04 12:09:23,217 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:23] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:09:23,728 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:09:23,728 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:23,728 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:09:23,730 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:09:23,731 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:09:23,731 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:24,595 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'1b6de4dc-1096-40da-a2ba-7f455abdff32'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'836'), (b'req-arrive-time', b'1759550963584'), (b'resp-start-time', b'1759550964420'), (b'x-envoy-upstream-service-time', b'833'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:09:24 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:09:24,596 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:09:24,598 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:09:24,600 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:09:24,601 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:09:24,601 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:09:24,603 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '1b6de4dc-1096-40da-a2ba-7f455abdff32', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '836', 'req-arrive-time': '1759550963584', 'resp-start-time': '1759550964420', 'x-envoy-upstream-service-time': '833', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:09:24 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:09:24,604 [DEBUG] openai._base_client: request_id: 1b6de4dc-1096-40da-a2ba-7f455abdff32
+2025-10-04 12:09:25,109 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:09:25,114 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:25,115 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:09:25,115 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:09:25,116 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:09:25,117 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:25,940 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'90fce5ae-53e9-4a29-910f-812a6734dcb6'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'795'), (b'req-arrive-time', b'1759550964969'), (b'resp-start-time', b'1759550965765'), (b'x-envoy-upstream-service-time', b'792'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:09:25 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:09:25,942 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:09:25,942 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:09:25,942 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:09:25,946 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:09:25,946 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:09:25,946 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '90fce5ae-53e9-4a29-910f-812a6734dcb6', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '795', 'req-arrive-time': '1759550964969', 'resp-start-time': '1759550965765', 'x-envoy-upstream-service-time': '792', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:09:25 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:09:25,946 [DEBUG] openai._base_client: request_id: 90fce5ae-53e9-4a29-910f-812a6734dcb6
+2025-10-04 12:09:26,056 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:09:26,059 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:26,059 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:09:26,061 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:09:26,062 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:09:26,063 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:09:27,304 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:27,463 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'bd993979-4a85-438f-ba6f-01ed71235bf8'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'1373'), (b'req-arrive-time', b'1759550965914'), (b'resp-start-time', b'1759550967288'), (b'x-envoy-upstream-service-time', b'1369'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:09:27 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:09:27,464 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:09:27,464 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:09:27,464 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:09:27,465 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:09:27,465 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:09:27,465 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'bd993979-4a85-438f-ba6f-01ed71235bf8', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '1373', 'req-arrive-time': '1759550965914', 'resp-start-time': '1759550967288', 'x-envoy-upstream-service-time': '1369', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:09:27 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:09:27,466 [DEBUG] openai._base_client: request_id: bd993979-4a85-438f-ba6f-01ed71235bf8
+2025-10-04 12:09:27,469 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:27] "POST /api/parse/start HTTP/1.1" 200 -
+2025-10-04 12:09:27,841 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:28,092 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:28] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:32,542 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:32] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:37,844 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:37] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:42,536 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:42] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:47,850 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:47] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:52,550 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:52] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:09:57,859 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:09:57] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:02,536 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:02] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:07,853 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:07] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:10,441 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:10] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:10:10,751 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:10] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:10:15,743 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:15] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:10:20,456 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:20] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:20,764 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:20] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:25,781 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:25] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:26,982 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:30,762 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:30] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:35,470 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:35] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:40,872 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:40] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:45,987 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:45] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:51,290 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:51] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:10:55,982 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:10:55] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:01,297 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:01] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:05,986 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:05] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:11,291 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:11] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:15,982 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:15] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:16,598 [INFO] werkzeug:  * Detected change in 'C:\\home\\sandbox\\arXiv_Download_Site\\backend\\app\\services\\llm_service.py', reloading
+2025-10-04 12:11:16,833 [INFO] werkzeug:  * Restarting with stat
+2025-10-04 12:11:18,508 [WARNING] werkzeug:  * Debugger is active!
+2025-10-04 12:11:18,508 [INFO] werkzeug:  * Debugger PIN: 772-486-663
+2025-10-04 12:11:19,411 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:19] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:11:19,678 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:19] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:11:20,282 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:20] "OPTIONS /api/parse/start HTTP/1.1" 200 -
+2025-10-04 12:11:22,009 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:11:22,014 [DEBUG] httpcore.connection: connect_tcp.started host='dashscope.aliyuncs.com' port=443 local_address=None timeout=None socket_options=None
+2025-10-04 12:11:22,024 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000183D3CF7F50>
+2025-10-04 12:11:22,024 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x00000183D3C03AD0> server_hostname='dashscope.aliyuncs.com' timeout=None
+2025-10-04 12:11:22,085 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000183D3CF7ED0>
+2025-10-04 12:11:22,085 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:22,086 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:11:22,086 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:11:22,087 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:11:22,087 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:23,404 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'84075fdf-257b-4c05-ab69-4ce77e263f15'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'1286'), (b'req-arrive-time', b'1759551081937'), (b'resp-start-time', b'1759551083224'), (b'x-envoy-upstream-service-time', b'1282'), (b'set-cookie', b'acw_tc=84075fdf-257b-4c05-ab69-4ce77e263f1578204c8691158a08f3f47adb319d98b5;path=/;HttpOnly;Max-Age=1800'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:11:23 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:11:23,405 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:11:23,405 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:11:23,406 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:11:23,406 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:11:23,407 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:11:23,407 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '84075fdf-257b-4c05-ab69-4ce77e263f15', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '1286', 'req-arrive-time': '1759551081937', 'resp-start-time': '1759551083224', 'x-envoy-upstream-service-time': '1282', 'set-cookie': 'acw_tc=84075fdf-257b-4c05-ab69-4ce77e263f1578204c8691158a08f3f47adb319d98b5;path=/;HttpOnly;Max-Age=1800', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:11:23 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:11:23,407 [DEBUG] openai._base_client: request_id: 84075fdf-257b-4c05-ab69-4ce77e263f15
+2025-10-04 12:11:23,628 [DEBUG] openai._base_client: Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-9c40d0b2-0401-4f1f-a11c-abd21859fce3', 'json_data': {'messages': [{'content': 'ÄãÊÇÒ»Ãû¿ÆÑÐÖúÊÖ£¬ÇëÔÄ¶Á¸ø¶¨ÂÛÎÄÎÄ±¾£¬ÌáÈ¡¡®´´ÐÂµã¡¯¡¢¡®ÊÔÑé·½·¨¡¯¡¢¡®½áÂÛ¡¯ÈýÏîÕªÒª¡£Ã¿¸ö×Ö¶Î²»³¬¹ý 200 ¸öºº×Ö£¬Èç¹ûÐÅÏ¢È±Ê§ÇëÊä³ö¡®ÔÝÎÞÐÅÏ¢¡¯¡£ÇëÑÏ¸ñ·µ»Ø JSON ¶ÔÏó£¬¼ü°üº¬ innovation, method, conclusion£¬ÖµÎª×Ö·û´®¡£\n\nÂÛÎÄÕýÎÄÈçÏÂ£º\n---\nClink! Chop! Thud! ¨C Learning Object Sounds from Real-World Interactions Mengyu Yang1Yiming Chen1Haozheng Pei1Siddhant Agarwal1 Arun Balajee Vasudevan2James Hays1 1Georgia Institute of Technology2Carnegie Mellon University Project Page:https://clink-chop-thud.github.io/ Which objects are sounding in this interaction? Figure 1. Humans handle a wide variety of objects throughout the day and many of these interactions produce sounds. We introduce a multimodalobject-awareframework that learns the relationship between the objects in an interaction and the resulting sounds. This enables our model to detect thesounding objectsfrom a set of candidates in a scene. Abstract Can a model distinguish between the sound of a spoon hit- ting a hardwood floor versus a carpeted one? Everyday object interactions produce sounds unique to the objects in- volved. We introduce the sounding object detection task to evaluate a model¡¯s ability to link these sounds to the objects directly involved. Inspired by human perception, our multi- modal object-aware framework learns from in-the-wild ego- centric videos. To encourage an object-centric approach, we first develop an automatic pipeline to compute segmen- tation masks of the objects involved to guide the model¡¯s focus during training towards the most informative regions of the interaction. A slot attention visual encoder is used to further enforce an object prior. We demonstrate state of the art performance on our new task along with existing multi- modal action understanding tasks. 1. Introduction Humans interact with many physical objects throughout the day. Oftentimes, interacting with an object results in a dis- tinct sound that provides informative cues about that action and the objects involved. The sound produced when a knife cuts through an onion is distinct from the sound made whenthe knife hits the chopping board. Humans can listen to the unique sounds of these object interactions and make cross- modal inferences about the objects involved. After hearing a sound, we can look at a visual scene and latch onto its focal region. For example, if we hear the sound of oil siz- zling, we do not first look at the sink next to the stove but instead direct our attention to the person stirring food in a pan. This is a biological phenomenon where humans per- ceive their surroundings by concentrating on key regions in a scene [19, 37]. While humans excel at distinguish- ing these sounds, current learning methods face challenges. Unlike the typical video datasets used in multimodal train- ing [4, 8, 15], which feature predefined sound categories (e.g. vehicles, animals), differentiating the impact sound caused by different materials is more subtle. This shortcom- ing is compounded by vision frameworks relying on global features that take the whole scene as input [3, 5, 25, 41]. Meanwhile, understanding object interactions requires a lo- calized, object-centric approach. We evaluate a model¡¯s understanding of the relationship between object interactions and sound by proposing the sounding object detection task. Given a set of object re- gions present in a scene and the sound of an interaction, the model predicts which object is directly involved in produc- 1arXiv:2510.02313v1 [cs.CV] 2 Oct 2025 ing the sound. To test this, we introduce a manually an- notated benchmark containing segmentation masks of the ground truth objects. We further evaluate the model¡¯s un- derstanding of sounds and object interactions by having it predict whether the existing sound is caused by the inter- action in the first place. This task, called sounding action discovery, was first proposed by Chenet al. [6]. We demon- strate that with our method, we outperform existing multi- modal techniques on both tasks. We do so by taking inspiration from natural human per- ception and develop a multimodalobject-awareframework to guide our model to explicitly focus on the informative regions of an object interaction. We leverage in-the-wild egocentric videos of interactions from Ego4D [18] and Epic Kitchens [10], with the benefits being twofold: 1) The large scale of these datasets means that a wide range of objects and object interactions are captured, including long-tail ex- amples, and 2) having an egocentric point of view means most actions occur in the near field, making the objects more visible and the interactions more audible. While existing works have studied frameworks that fo- cus on objects to reduce visual redundancy and learn a more compact representation [11, 26, 35, 47], these works only learn from a single modality and exclude the additional information gained by associating object interactions with sounds. There are a few works on multimodal object-centric representation learning [13, 14] but the data they train on is synthetic or laboratory-collected. Such methods do not scale well if we want to learn about the wide range of ob- ject interactions that occur in daily life. To help our method scale to these larger datasets, we de- velop an automatic pipeline that leverages an off-the-shelf hand-object interaction detection model [36] to automati- cally annotate our training data with object segmentation masks. These masks inform our model on which visual patch features to sample, guiding its focus towards the re- gions of the object interaction and learning an object-aware representation in the process. To further equip our model with a strong object prior, we initialize our visual encoder with a pretrained slot attention model [21]. These archi- tectures contain a bottleneck attention module which learn to compress visual features intokoutput vectors called slots [26]. Through training, each slot learns to attend to unique objects and creates object-centric boundaries. Us- ing our multimodal object-aware approach, we aim to learn the unique correlations between an object interaction and the sound it produces. To do so, we introduce the sound- ing object detection task along with a manually annotated benchmark and demonstrate state of the art performance. 2. Related Work Multimodal representation learningMultimodal repre- sentation learning unifies vision, audio, language, and othermodalities through contrastive and self-supervised learning. Contrastive learning on large-scale datasets have enabled vision-language pretraining for zero-shot classification and retrieval, later extending to audio-text alignment [30, 42]. In ImageBind [16], a unified embedding space is learned across a range of modalities to enable cross-modal asso- ciations without direct supervision. This was later refined by mapping all modalities to language for stronger seman- tic consistency [48]. In other works, [45] supports twelve modalities with different tokenization techniques using a scalable multimodal framework. In [6], the authors develop a contrastive-consensus loss framework to learn how ac- tions sound from egocentric videos. The loss refines audio- vision-language embeddings to better associate actions with their characteristic sounds. Our work relies on similar con- trastive frameworks to learn from egocentric videos, but we employ an object-aware approach that enables our model to reason about localized object interactions. Object representationsTraditional deep learning mod- els typically analyze entire scenes without distinguish- ing between individual objects, leading to inefficiencies which object-centric learning aims to address. In [46], object-guided token sampling and attention are used to en- hance action recognition in video transformers. Addition- ally, slot attention models [26] use a bottleneck attention module to compress image features intokslot vectors. Through an iterative attention mechanism, slots learn to at- tend to individual object regions, forming object segmen- tation masks. [21] introduced improvements to the original slot attention model by using a student-teacher framework. Finally, [13, 14] introduced a multimodal dataset to capture h\n---', 'role': 'user'}], 'model': 'qwen-turbo', 'max_tokens': 1024, 'n': 1, 'stream': False, 'temperature': 0.5}}
+2025-10-04 12:11:23,628 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:11:23,628 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:23,628 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:11:23,631 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:11:23,631 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:11:23,632 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:24,112 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:24] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:11:24,611 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'36fb3ad2-3bd1-4405-acd9-3b9dee74cf5c'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'952'), (b'req-arrive-time', b'1759551083482'), (b'resp-start-time', b'1759551084434'), (b'x-envoy-upstream-service-time', b'950'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:11:24 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:11:24,612 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:11:24,612 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:11:24,613 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:11:24,613 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:11:24,613 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:11:24,614 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '36fb3ad2-3bd1-4405-acd9-3b9dee74cf5c', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '952', 'req-arrive-time': '1759551083482', 'resp-start-time': '1759551084434', 'x-envoy-upstream-service-time': '950', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:11:24 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:11:24,614 [DEBUG] openai._base_client: request_id: 36fb3ad2-3bd1-4405-acd9-3b9dee74cf5c
+2025-10-04 12:11:25,399 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:11:25,399 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:25,402 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:11:25,402 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:11:25,402 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:11:25,403 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:26,817 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'de0743e0-0929-4db0-ac8d-e4d6f4eff270'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'1387'), (b'req-arrive-time', b'1759551085253'), (b'resp-start-time', b'1759551086640'), (b'x-envoy-upstream-service-time', b'1384'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:11:26 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:11:26,817 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:11:26,818 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:11:26,818 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:11:26,819 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:11:26,819 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:11:26,819 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': 'de0743e0-0929-4db0-ac8d-e4d6f4eff270', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '1387', 'req-arrive-time': '1759551085253', 'resp-start-time': '1759551086640', 'x-envoy-upstream-service-time': '1384', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:11:26 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:11:26,820 [DEBUG] openai._base_client: request_id: de0743e0-0929-4db0-ac8d-e4d6f4eff270
+2025-10-04 12:11:27,361 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:27] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:27,464 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:11:27,469 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:27,470 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:11:27,472 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:11:27,472 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:11:27,473 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:28,896 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'8f6756f4-7153-444a-8c1a-186aa7ab53b3'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'1396'), (b'req-arrive-time', b'1759551087322'), (b'resp-start-time', b'1759551088719'), (b'x-envoy-upstream-service-time', b'1393'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:11:28 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:11:28,897 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:11:28,898 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:11:28,898 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:11:28,898 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:11:28,901 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:11:28,901 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '8f6756f4-7153-444a-8c1a-186aa7ab53b3', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '1396', 'req-arrive-time': '1759551087322', 'resp-start-time': '1759551088719', 'x-envoy-upstream-service-time': '1393', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:11:28 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:11:28,901 [DEBUG] openai._base_client: request_id: 8f6756f4-7153-444a-8c1a-186aa7ab53b3
+2025-10-04 12:11:29,022 [DEBUG] openai._base_client: Sending HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+2025-10-04 12:11:29,022 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:29,022 [DEBUG] httpcore.http11: send_request_headers.complete
+2025-10-04 12:11:29,025 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2025-10-04 12:11:29,025 [DEBUG] httpcore.http11: send_request_body.complete
+2025-10-04 12:11:29,026 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2025-10-04 12:11:29,430 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:29] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:11:30,908 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'vary', b'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding'), (b'x-request-id', b'9388a5c4-703a-4ff5-8fed-439d186d4e1b'), (b'x-dashscope-call-gateway', b'true'), (b'content-type', b'application/json'), (b'req-cost-time', b'1856'), (b'req-arrive-time', b'1759551088875'), (b'resp-start-time', b'1759551090731'), (b'x-envoy-upstream-service-time', b'1853'), (b'content-encoding', b'gzip'), (b'date', b'Sat, 04 Oct 2025 04:11:30 GMT'), (b'server', b'istio-envoy'), (b'transfer-encoding', b'chunked')])
+2025-10-04 12:11:30,909 [INFO] httpx: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-04 12:11:30,911 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2025-10-04 12:11:30,912 [DEBUG] httpcore.http11: receive_response_body.complete
+2025-10-04 12:11:30,912 [DEBUG] httpcore.http11: response_closed.started
+2025-10-04 12:11:30,913 [DEBUG] httpcore.http11: response_closed.complete
+2025-10-04 12:11:30,914 [DEBUG] openai._base_client: HTTP Response: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "200 OK" Headers({'vary': 'Origin,Access-Control-Request-Method,Access-Control-Request-Headers, Accept-Encoding', 'x-request-id': '9388a5c4-703a-4ff5-8fed-439d186d4e1b', 'x-dashscope-call-gateway': 'true', 'content-type': 'application/json', 'req-cost-time': '1856', 'req-arrive-time': '1759551088875', 'resp-start-time': '1759551090731', 'x-envoy-upstream-service-time': '1853', 'content-encoding': 'gzip', 'date': 'Sat, 04 Oct 2025 04:11:30 GMT', 'server': 'istio-envoy', 'transfer-encoding': 'chunked'})
+2025-10-04 12:11:30,914 [DEBUG] openai._base_client: request_id: 9388a5c4-703a-4ff5-8fed-439d186d4e1b
+2025-10-04 12:11:30,916 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:30] "POST /api/parse/start HTTP/1.1" 200 -
+2025-10-04 12:11:31,290 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:31] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:31,555 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:31] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:35,993 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:35] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:41,298 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:41] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:45,996 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:45] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:51,302 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:51] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:11:55,993 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:11:55] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:02,289 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:02] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:06,986 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:06] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:12,290 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:12] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:16,975 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:16] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:21,308 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:21] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:26,992 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:26] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:31,303 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:31] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:35,990 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:35] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:41,297 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:41] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:12:41,552 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:41] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:12:41,814 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:41] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:12:46,510 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:46] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:12:51,819 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:51] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:12:56,506 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:12:56] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:01,819 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:01] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:06,521 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:06] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:11,807 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:11] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:16,509 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:16] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:21,831 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:21] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:26,514 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:32,286 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:32] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:36,989 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:36] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:42,298 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:42] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:46,980 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:46] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:52,294 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:52] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:13:56,987 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:13:56] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:14:02,292 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:14:02] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:14:06,976 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:14:06] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:14:12,299 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:14:12] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:14:16,978 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:14:16] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:14:22,298 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:14:22] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:14:26,990 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:14:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:15:27,308 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:15:27] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:16:26,978 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:16:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:17:27,290 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:17:27] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:18:26,984 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:18:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:19:27,292 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:19:27] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:20:26,983 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:20:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:21:27,304 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:21:27] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:22:26,994 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:22:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:23:27,304 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:23:27] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:24:26,978 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:24:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:25:27,299 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:25:27] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:26:26,991 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:26:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:27:27,303 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:27:27] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:28:26,991 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:28:26] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:29:27,302 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:29:27] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:42:05,118 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:05] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:42:15,327 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:15] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:42:15,634 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:15] "GET /api/system/storage HTTP/1.1" 200 -
+2025-10-04 12:42:15,635 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:15] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:42:15,777 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:15] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:42:15,941 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:15] "GET /api/system/storage HTTP/1.1" 200 -
+2025-10-04 12:42:18,649 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:18] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:42:18,906 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:18] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:42:23,350 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:23] "GET /api/parse/progress HTTP/1.1" 200 -
+2025-10-04 12:42:24,721 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:24] "GET /api/excel/status HTTP/1.1" 200 -
+2025-10-04 12:42:24,976 [INFO] werkzeug: 127.0.0.1 - - [04/Oct/2025 12:42:24] "GET /api/excel/status HTTP/1.1" 200 -
